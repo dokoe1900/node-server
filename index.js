@@ -8,9 +8,12 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
+
 app.post('/auth/',(req,res)=>{
     console.log(req.body);
     res.send("Received POST Data!");
 });
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+
+//https://qiita.com/TakeshiNickOsanai/items/b1720dcbe2bb5f9e524f
